@@ -3,7 +3,10 @@ const Book = require('../models/bookModel');
 function bookController() {
   function post(req, res) {
     const book = new Book(req.body);
-
+    if (!req.body.title) {
+      res.status(400);
+      return res.send('Title is required');
+    }
     book.save((err, addedBook) => {
       if (err) {
         return res.send(err);
