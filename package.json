@@ -27,7 +27,10 @@
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "sinon": "^7.2.2"
   },
   "nodemonConfig": {
     "restartable": "rs",
